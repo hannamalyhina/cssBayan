@@ -11,24 +11,56 @@
     <header>
         <h1>Css Bayan</h1>
     </header>
-    <content>
-        <div id=" first">
-            <h2></h2>
-            <img src="img/first.jpg" alt=" the first mem">
-        </div>
-        <div id=" second"></div>
-        <h2></h2>
-        <span>+</span>
-        <img src="img/second.jpg" alt="the second mem">
-        <div id=" third"></div>
-        <h2></h2>
-        <span>+</span>
-        <img src="img/third.jpg" alt="the third mem">
-        <div id=" fourth"></div>
-        <h2></h2>
-        <span>+</span>
-        <img src="img/fourth.jpg" alt="the fourth mem">
-    </content>
+    <div class="accordion">
+        <section>
+            <input type="radio" id="first-radio" name="accordion-radio" checked>
+            <label for="first-radio" class="label">
+                <span class="section-header">
+                    <span>TO REALIZE</span>
+                    <span class="icon">+</span>
+                </span>
+                <span class="section-content">
+                    <img src="img/first.jpg" alt=" the first mem">
+                </span>
+            </label>
+        </section>
+        <section>
+            <input type="radio" id="second-radio" name="accordion-radio">
+            <label for="second-radio" class="label">
+                <span class="section-header">
+                    <span>MOULD</span>
+                    <span class="icon">+</span>
+                </span>
+                <span class="section-content">
+                    <img src="img/second.jpg" alt="the second mem">
+                </span>
+            </label>
+        </section>
+        <section>
+            <input type="radio" id="third-radio" name="accordion-radio">
+            <label for="third-radio" class="label">
+                <span class="section-header">
+                    <span>KIDNEY</span>
+                    <span class="icon">+</span>
+                </span>
+                <span class="section-content">
+                    <img src="img/third.jpg" alt="the third mem">
+                </span>
+            </label>
+        </section>
+        <section>
+            <input type="radio" id="fourth-radio" name="accordion-radio">
+            <label for="fourth-radio" class="label">
+                <span class="section-header">
+                    <span>LAZINESS</span>
+                    <span class="icon">+</span>
+                </span>
+                <span class="section-content">
+                    <img src="img/fourth.jpg" alt="the forth mem">
+                </span>
+            </label>
+        </section>
+    </div>
 </main>
 </body>
 </html>
