@@ -1,11 +1,27 @@
+body{
+    background-color: #e3c596;
+}
 main{
     margin: 0 100px;
+    padding: 5px;
 }
-h2 {
-    margin: 0;
+.title{
+    padding: 5px 5px 5px 0;
+}
+section{
+    border-top: 1px solid  #3b3a3a;
+    padding-bottom:10px ;
 }
 img{
-    width: 50%;
+    width: 20%;
+    border: solid 1px black;
+    opacity: 1;
+}
+.icon{
+    display: none;
+}
+.accordion:hover .icon{
+    display: block;
 }
 .accordion .section-header {
     display: flex;
@@ -18,12 +34,25 @@ img{
 .accordion .section-content {
     margin-left: 50px;
     display: none;
+    opacity: 0.3;
+    transition: opacity 4s;
 }
 .accordion section:hover .section-content {
     display: block;
+    opacity: 1;
+    transition-duration:2s;
+}
+.accordion section:visited .section-header .title{
+    font-style: italic;
+    text-decoration: underline;
+}
+.accordion section:hover .section-header .title{
+   font-style: italic;
+    text-decoration: underline;
 }
 .accordion section:hover .section-header .icon{
-    transform: rotate(45deg);
+    transform: scale(2) rotate(45deg);
+    transition-duration:2s;
 }
 .accordion section input:checked + .label .section-content {
     display: block;
