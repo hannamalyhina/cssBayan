@@ -1,0 +1,31 @@
+main{
+    margin: 0 100px;
+}
+h2 {
+    margin: 0;
+}
+img{
+    width: 50%;
+}
+.accordion .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.accordion input {
+    display: none;
+}
+.accordion .section-content {
+    margin-left: 50px;
+    display: none;
+}
+.accordion section:hover .section-content {
+    display: block;
+}
+.accordion section:hover .section-header .icon{
+    transform: rotate(45deg);
+}
+.accordion section input:checked + .label .section-content {
+    display: block;
+}
+
